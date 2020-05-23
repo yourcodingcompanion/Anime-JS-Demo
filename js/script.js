@@ -5,8 +5,6 @@ window.onload = function () {
             anime({
                 targets: '.left-half',
                 left: ['0', '50vw'],
-                background: '#e5585b',
-                color: '#fff',
                 zIndex: 2,
                 opacity: ['0.3', '1'],
                 rotate: ['0deg', '360deg'],
@@ -16,8 +14,6 @@ window.onload = function () {
             anime({
                 targets: '.right-half',
                 right: ['0', '50vw'],
-                background: '#fff',
-                color: '#e5585b',
                 zIndex: 2,
                 opacity: ['0.3', '1'],
                 rotate: ['0deg', '360deg'],
@@ -30,8 +26,6 @@ window.onload = function () {
             anime({
                 targets: '.right-half',
                 right: ['50vw', '0'],
-                background: '#fff',
-                color: '#e5585b',
                 zIndex: 2,
                 opacity: ['0.3', '1'],
                 rotate: ['360deg', '0deg'],
@@ -41,8 +35,6 @@ window.onload = function () {
             anime({
                 targets: '.left-half',
                 left: ['50vw', '0'],
-                background: '#e5585b',
-                color: '#fff',
                 zIndex: 2,
                 opacity: ['0.3', '1'],
                 rotate: ['360deg', '0deg'],
