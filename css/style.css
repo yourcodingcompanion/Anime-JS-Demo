@@ -1,0 +1,113 @@
+@font-face { font-family: aAnnyeongHaseyo ; src: url('../fonts/aAnnyeongHaseyo.otf'); } 
+
+:root{
+    --blue-color: #3f3d56;
+    --red-color: #ff6366;
+    --dark-red-color: #e5585b;
+    --white-color: #fff;
+    --border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.swap-btn, .invert-swap-btn{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 60pt;
+    height: 60pt;
+    background: linear-gradient(90deg, var(--white-color), var(--dark-red-color));
+    border: none;
+    box-shadow: 1px 1px 1px 1px var(--red-color);
+    transition: scale 0.3s ease-in;
+    z-index: 10;
+}
+
+.invert-swap-btn{
+    background: linear-gradient(90deg, var(--dark-red-color), var(--white-color));
+}
+
+.swap-btn:active, .invert-swap-btn:active{
+    scale: 0.9;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.left-half{
+    background: var(--red-color);
+    position: relative;
+    left: 0;
+    transition: ease-in-out;
+    color: var(--white-color);
+}
+
+.right-half{
+    background: var(--white-color);
+    position: relative;
+    color: var(--dark-red-color);
+}
+
+.logo-font{
+    font-family: 'aAnnyeongHaseyo';
+}
+
+.logo-text{
+    font-size: 14pt;
+}
+
+.logo-size-1{
+    font-size: 50pt;
+}
+
+.logo-left-part, .logo-right-part{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width: 592px){
+    .swap-btn, .invert-swap-btn{
+        width: 40pt;
+        height: 40pt;
+    }
+
+    .logo-left-part, .logo-right-part{
+        font-size: 30pt;
+    }
+}
+
+.YCC{
+    color: #000;
+    font-size: 14px;
+    bottom: 5pt;
+    position: absolute;
+    right: 5pt;
+    z-index: 999;
+}
